@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/peso"
+        android:layout_width="205dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Peso:"
+        android:inputType="number"
+        android:background="@drawable/caixadetexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="205dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Altura"
+        android:inputType="numberDecimal"
+        android:background="@drawable/caixadetexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/textoIMC"
+        android:layout_width="205dp"
+        android:layout_height="54dp"
+        android:background="@drawable/caixadetexto"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="IMC: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <TextView
+        android:id="@+id/textoDetalhes"
+        android:layout_width="357dp"
+        android:layout_height="92dp"
+        android:background="@drawable/caixadetexto"
+        android:fontFamily="monospace"
+        android:text="Seu corpo é capaz de evoluir, e sua mente é sua maior aliada. Acredite no seu potencial e siga em frente com coragem!"
+        android:textColor="#4D4D4D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/btn_fechar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="voltar"
+        android:text="Voltar"
+        android:backgroundTint="#00A859"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="367dp"
+        android:layout_height="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/o3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="59dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
